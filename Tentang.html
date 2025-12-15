@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <title>WebsiteKU - Tentang</title>
+
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: "Segoe UI", Arial, sans-serif;
+            background-color: #f4f4f4;
+            color: #333;
+        }
+
+        .wrapper {
+            max-width: 1100px;
+            margin: 40px auto;
+        }
+
+        .card {
+            background-color: #ffffff;
+            border-radius: 14px;
+            box-shadow: 0 4px 18px rgba(0,0,0,0.08);
+            padding: 26px 30px 18px 30px;
+            min-height: 580px;
+        }
+
+        /* Judul & nav (mirip Home) */
+        .page-title {
+            font-size: 26px;
+            font-weight: 600;
+            margin-bottom: 6px;
+        }
+
+        .nav {
+            font-size: 13px;
+            margin-bottom: 22px;
+        }
+
+        .nav a {
+            text-decoration: none;
+            color: #555;
+            margin-right: 6px;
+        }
+
+        .nav a:hover {
+            color: #1a73e8;
+        }
+
+        /* Layout kiri teks – kanan foto */
+        .content-tentang {
+            display: flex;
+            align-items: flex-start;
+            gap: 30px;
+            margin-bottom: 20px;
+        }
+
+        .content-tentang .text {
+            flex: 1.6;
+            font-size: 13px;
+            line-height: 1.5;
+        }
+
+        .content-tentang .text p {
+            margin-bottom: 18px;
+        }
+
+        .content-tentang .text h4 {
+            font-size: 15px;
+            margin-bottom: 8px;
+        }
+
+        /* Tabel biodata mirip contoh */
+        .bio {
+            width: 100%;
+            border-collapse: collapse;
+            border-radius: 6px;
+            overflow: hidden;
+            background-color: #fafafa;
+            font-size: 13px;
+        }
+
+        .bio th,
+        .bio td {
+            border: 1px solid #e0e0e0;
+            padding: 9px 14px;
+            text-align: left;
+        }
+
+        .bio th {
+            width: 35%;
+            background-color: #f2f2f2;
+            font-weight: 600;
+        }
+
+        /* Foto profil di kanan */
+        .photo-profil {
+            flex: 1;
+            display: flex;
+            justify-content: center;
+            align-items: flex-start;
+        }
+
+        .photo-profil img {
+            width: 180px;
+            height: 230px;
+            object-fit: cover;
+            border-radius: 6px;
+            border: 1px solid #ddd;
+        }
+
+        /* Link kembali & footer */
+        .back-link {
+            font-size: 12px;
+            margin-top: 10px;
+            margin-bottom: 6px;
+        }
+
+        .back-link a {
+            color: #1a73e8;
+            text-decoration: none;
+        }
+
+        .back-link a:hover {
+            text-decoration: underline;
+        }
+
+        .footer {
+            font-size: 11px;
+            color: #777;
+        }
+    </style>
+</head>
+<body>
+<div class="wrapper">
+    <div class="card">
+        <h1 class="page-title">Tentang</h1>
+
+        <nav class="nav">
+            <a href="Home.html">Home</a> |
+            <a href="Tentang.html">Tentang</a> |
+            <a href="Kontak.html">Kontak</a>
+        </nav>
+
+        <div class="content-tentang">
+            <div class="text">
+                <p>
+                    Assalamualaikum, hallo guyss Saya Ririn salah satu Mahasiswi di Universitas Teknologi Mataram. Saya mengambil jurusan Sistem Informasi, saya berasal dari Lingsar, Peteluan indah Lombok Barat. 
+                </p>
+
+                <h4>Biodata</h4>
+                <table class="bio">
+                    <tr>
+                        <th>Nama</th>
+                        <td>Ririn</td>
+                    </tr>
+                    <tr>
+                        <th>NIM</th>
+                        <td>24SI045</td>
+                    </tr>
+                    <tr>
+                        <th>Program Studi</th>
+                        <td>Sistem Informasi</td>
+                    </tr>
+                    <tr>
+                        <th>Hobi</th>
+                        <td>Makan</td>
+                    </tr>
+                </table>
+            </div>
+
+            <div class="photo-profil">
+                <img src="c:\Users\Lenovo\AppData\Local\Packages\5319275A.WhatsAppDesktop_cv1g1gvanyjgm\LocalState\sessions\DA3A917237D8C6978AA9B43AEC3855BC35CD3C52\transfers\2025-48\WhatsApp Image 2025-11-28 at 11.08.12.jpeg" alt="Foto Profil">
+            </div>
+        </div>
+
+        <p class="back-link">← <a href="home.html">Kembali ke Home</a></p>
+        <p class="footer">© 2025 Website Sederhana Ririn</p>
+    </div>
+</div>
+</body>
+</html>

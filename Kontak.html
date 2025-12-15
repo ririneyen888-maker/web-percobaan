@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <title>WebsiteKU - Kontak</title>
+
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: "Segoe UI", Arial, sans-serif;
+            background-color: #f4f4f4;
+            color: #333;
+        }
+
+        .wrapper {
+            max-width: 1100px;
+            margin: 40px auto;
+        }
+
+        .card {
+            background-color: #ffffff;
+            border-radius: 14px;
+            box-shadow: 0 4px 18px rgba(0,0,0,0.08);
+            padding: 26px 30px 18px 30px;
+            min-height: 580px;
+        }
+
+        .page-title {
+            font-size: 26px;
+            font-weight: 600;
+            margin-bottom: 6px;
+        }
+
+        .nav {
+            font-size: 13px;
+            margin-bottom: 18px;
+        }
+
+        .nav a {
+            text-decoration: none;
+            color: #555;
+            margin-right: 6px;
+        }
+
+        .nav a:hover {
+            color: #1a73e8;
+        }
+
+        .subtitle {
+            font-size: 15px;
+            font-weight: 600;
+            margin-bottom: 6px;
+        }
+
+        .desc {
+            font-size: 13px;
+            line-height: 1.5;
+            margin-bottom: 16px;
+            max-width: 520px;
+        }
+
+        /* Form seperti di gambar kanan */
+        .form-kontak {
+            max-width: 520px;
+            font-size: 13px;
+            margin-bottom: 18px;
+        }
+
+        .form-group {
+            margin-bottom: 10px;
+        }
+
+        .form-group label {
+            display: block;
+            margin-bottom: 4px;
+        }
+
+        .form-group input,
+        .form-group textarea {
+            width: 100%;
+            border: 1px solid #dcdcdc;
+            border-radius: 3px;
+            padding: 7px 8px;
+            font-size: 13px;
+            font-family: inherit;
+        }
+
+        .form-group input:focus,
+        .form-group textarea:focus {
+            outline: none;
+            border-color: #1a73e8;
+        }
+
+        .form-group textarea {
+            min-height: 90px;
+            resize: vertical;
+        }
+
+        .btn-kirim {
+            margin-top: 6px;
+            padding: 6px 18px;
+            font-size: 13px;
+            border-radius: 3px;
+            border: 1px solid #1a73e8;
+            background-color: #1a73e8;
+            color: #fff;
+            cursor: pointer;
+        }
+
+        .btn-kirim:hover {
+            background-color: #0f5cc4;
+            border-color: #0f5cc4;
+        }
+
+        .back-link {
+            font-size: 12px;
+            margin-top: 8px;
+            margin-bottom: 6px;
+        }
+
+        .back-link a {
+            color: #1a73e8;
+            text-decoration: none;
+        }
+
+        .back-link a:hover {
+            text-decoration: underline;
+        }
+
+        .footer {
+            font-size: 11px;
+            color: #777;
+        }
+    </style>
+</head>
+<body>
+<div class="wrapper">
+    <div class="card">
+        <h1 class="page-title">Kontak</h1>
+
+        <nav class="nav">
+            <a href="Home.html">Home</a> |
+            <a href="Tentang.html">Tentang</a> |
+            <a href="Kontak.html">Kontak</a>
+        </nav>
+
+        <h3 class="subtitle">Hubungi Kami</h3>
+        <p class="desc">
+            Untuk informasi selanjutnya silahkan isi formulir dibawah ini. 
+        </p>
+
+        <form action="#" method="post" class="form-kontak">
+            <div class="form-group">
+                <label for="nama">Nama</label>
+                <input id="nama" type="text" name="nama" placeholder="Masukkan nama">
+            </div>
+            <div class="form-group">
+                <label for="email">Email</label>
+                <input id="email" type="email" name="email" placeholder="Masukkan email">
+            </div>
+            <div class="form-group">
+                <label for="pesan">Pesan</label>
+                <textarea id="pesan" name="pesan" placeholder="Tulis pesan anda..."></textarea>
+            </div>
+            <button type="submit" class="btn-kirim">Kirim</button>
+        </form>
+
+        <p class="back-link">← <a href="home.html">Kembali ke Home</a></p>
+        <p class="footer">© 2024 Website Sederhana Ririn</p>
+    </div>
+</div>
+</body>
+</html>
